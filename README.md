@@ -35,7 +35,7 @@ The following Redis commands are added with this module.
 
   **Usage**
 
-  REDISRULE.GETCONFI <RULE_INDEX>
+  `REDISRULE.GETCONFI <RULE_INDEX>`
 
   **Return**
   - Redis Rule as a decrypted JSON if this is a Confidential Rule.
@@ -237,10 +237,10 @@ If you are running Redis 6 or later, please make use of Redis ACL to segregate t
 
 |Command|Application Role|DevOps Role|Break Glass Role|
 |---|:-:|:-:|:-:|
-|REDISRULE.GET|x||x|
-|REDISRULE.GETCONFI|||x|
-|REDISRULE.LOCK||x||
-|REDISRULE.UNLOCK||x||
-|REDISRULE.DEL||x||
-|REDISRULE.PUT||x||
-|REDISRULE.EVAL|x|||
+|`REDISRULE.GET`|x||x|
+|`REDISRULE.GETCONFI`|||x|
+|`REDISRULE.LOCK`||x||
+|`REDISRULE.UNLOCK`||x||
+|`REDISRULE.DEL`||x||
+|`REDISRULE.PUT`||x||
+|`REDISRULE.EVAL`|x|||
