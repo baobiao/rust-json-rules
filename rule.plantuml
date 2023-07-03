@@ -1,0 +1,23 @@
+@startjson name "Rule"
+[
+  "and",
+  [
+    "and",
+    [
+      "=",
+      "world",
+      "hello"
+    ],
+    [
+      "<=",
+      "a",
+      2
+    ]
+  ],
+  [
+    "=",
+    "a",
+    1
+  ]
+]
+@endjson

@@ -1,0 +1,24 @@
+[package]
+name = "rust-json-rules"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "redisrule"
+
+[dependencies]
+aes-gcm = "0.10.2"
+base64 = {version="0.21.2", feature="std"}
+rand = "0.8.5"
+redis-module = "2.0.4"
+rule = "0.1.6"
+serde_json = "1.0.99"
+serde = {version = "1.0", features = ["derive"]}
+
+[profile.release]
+#codegen-units = 1   # Default is 16 codegen units.
+#opt-level = "z"     # Optimize for size.
+lto = true          # Enable link time optimization.
+#panic = "abort"     # Abort on Panic instead of unwind with stack trace.
+#strip = true        # Automatically strip symbols from the binary.
